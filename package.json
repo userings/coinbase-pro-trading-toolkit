@@ -15,7 +15,7 @@
     "clean": "rm -fr build coverage .nyc_output",
     "doc": "yarn run readme && ./node_modules/.bin/typedoc --options typedoc.json src/",
     "readme": "node generate-md.js",
-    "prepublishOnly": "yarn run build"
+    "prepare": "yarn run build"
   },
   "bin": {
     "coinbaseProConsole": "./build/src/consoles/coinbaseProConsole.js"
