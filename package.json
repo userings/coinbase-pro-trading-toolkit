@@ -14,8 +14,7 @@
     "test": "yarn run lint && yarn run test:mocha",
     "clean": "rm -fr build coverage .nyc_output",
     "doc": "yarn run readme && ./node_modules/.bin/typedoc --options typedoc.json src/",
-    "readme": "node generate-md.js",
-    "prepare": "yarn run build"
+    "readme": "node generate-md.js"
   },
   "bin": {
     "coinbaseProConsole": "./build/src/consoles/coinbaseProConsole.js"
